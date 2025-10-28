@@ -111,3 +111,16 @@ body {
   transform: scale(1.05);
 }
 
+/* Header positioning */
+header {
+  position: absolute;      /* so it floats independently of body flex */
+  top: 20px;               /* same top spacing as About page */
+  right: 40px;             /* same right spacing as About page */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;             /* ensure it stays above content */
+  background: none;        /* transparent so no grey block */
+}
+
+

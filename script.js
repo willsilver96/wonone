@@ -8,6 +8,12 @@ function updateStats() {
   document.getElementById("odds").innerText = `1 in ${Math.round(users)}`;
 }
 
+// Animate the gold fill height (cap at 100%)
+const goldFill = document.querySelector('.gold-fill');
+const maxAmount = 100; // adjust this to your target pot max
+const fillPercent = Math.min((potAmount / maxAmount) * 100, 100);
+goldFill.style.height = `${fillPercent}%`;
+
 // Example: simulate new entries every few seconds
 setInterval(() => {
   pot += 0.11;

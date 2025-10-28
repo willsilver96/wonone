@@ -1,6 +1,6 @@
 // Placeholder data
-let pot = 110.00;
-let users = 1000;
+let pot = 11.00;
+let users = 100;
 
 const potElement = document.querySelector('.pot');
 

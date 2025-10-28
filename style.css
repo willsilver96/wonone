@@ -98,13 +98,13 @@ body {
   font-family: inherit;
   padding: 0;              /* no extra spacing */
   border: none;
-  text-decoration: underline; /* optional for hover effect */
+  text-decoration: none; /* optional for hover effect */
   box-shadow: none;
 }
 
 .play-button:hover, .donate-button:hover {
   color: #ff8a5f;           /* subtle hover change */
-  text-decoration: none;    /* optional */
+  text-decoration: underline;    /* optional */
 }
 
 
@@ -147,22 +147,4 @@ p {
   line-height: 1.6;
   margin-bottom: 30px;
   color: #333;
-}
-
-.donate-button {
-  background: linear-gradient(135deg, #ff5a5f, #ff8a5f);
-  color: #fff;
-  border: none;
-  padding: 15px 35px;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 20px #ff5a5f80;
-}
-
-.donate-button:hover {
-  box-shadow: 0 0 40px #ff5a5f;
-  transform: scale(1.05);
 }

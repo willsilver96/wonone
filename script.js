@@ -10,7 +10,7 @@ function updateStats() {
 
 // Animate the gold fill height (cap at 100%)
 const goldFill = document.querySelector('.gold-fill');
-const maxAmount = 100; // adjust this to your target pot max
+const maxAmount = 1000; // adjust this to your target pot max
 const fillPercent = Math.min((potAmount / maxAmount) * 100, 100);
 goldFill.style.height = `${fillPercent}%`;
 

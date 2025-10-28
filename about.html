@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About WON ONE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: sans-serif; /* clean, smart font */
       background-color: #f2f2f2; /* same as main page */
       color: #111;
       margin: 0;
@@ -19,19 +19,22 @@
       text-align: center;
     }
 
+    /* Top-right nav */
     header {
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      padding: 20px;
-      background: #f2f2f2; /* matches page bg */
+      padding: 20px 40px; /* match main page spacing */
+      box-sizing: border-box;
+      background: #f2f2f2;
     }
 
     header a {
       color: #111;
       text-decoration: none;
-      font-weight: 600;
-      margin-left: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 1rem;
       transition: color 0.3s;
     }
 
@@ -99,4 +102,3 @@
 
 </body>
 </html>
-

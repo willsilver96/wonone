@@ -40,7 +40,13 @@ body {
   border-radius: 50% / 40%;
   box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5);
   animation: glow 3s infinite ease-in-out;
+
+  /* new: center content inside the pot */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 /* Glow animation */
 @keyframes glow {
@@ -54,20 +60,6 @@ body {
       inset 0 -6px 12px rgba(0,0,0,0.6),
       0 0 calc(15px + var(--glow-strength, 15px)) rgba(255,215,0,0.4);
   }
-}
-
-/* Inner bowl */
-.pot-inner {
-  position: relative;  /* instead of absolute */
-  top: auto;
-  left: auto;
-  transform: none;
-  width: 130px;
-  height: 70px;
-  background-color: transparent; /* no oval */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Lip of the pot */

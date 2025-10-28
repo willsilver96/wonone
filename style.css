@@ -89,29 +89,24 @@ body {
   box-shadow: -50px 0 0 #111, 50px 0 0 #111;
 }
 
-/* Style for Play / About button in header */
 /* Play / About buttons */
-.play-button {
-  display: inline-block;   /* prevent flex/block issues */
-  background: linear-gradient(135deg, #ff5a5f, #ff8a5f);
-  color: #fff;
-  border: none;
-  padding: 12px 28px;
-  font-size: 1rem;
+.play-button, .donate-button {
+  display: inline;
+  background: none;        /* remove the gradient rectangle */
+  color: #ff5a5f;          /* red text like your h1 */
   font-weight: bold;
   font-family: inherit;
-  border-radius: 12px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 20px #ff5a5f80;
+  padding: 0;              /* no extra spacing */
+  border: none;
+  text-decoration: underline; /* optional for hover effect */
+  box-shadow: none;
 }
 
-
-.play-button:hover {
-  box-shadow: 0 0 40px #ff5a5f;
-  transform: scale(1.05);
+.play-button:hover, .donate-button:hover {
+  color: #ff8a5f;           /* subtle hover change */
+  text-decoration: none;    /* optional */
 }
+
 
 /* Ensure header has no background */
 header {

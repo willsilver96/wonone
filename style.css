@@ -58,16 +58,16 @@ body {
 
 /* Inner bowl */
 .pot-inner {
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;  /* instead of absolute */
+  top: auto;
+  left: auto;
+  transform: none;
   width: 130px;
   height: 70px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: none;
-  overflow: hidden;
+  background-color: transparent; /* no oval */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Lip of the pot */

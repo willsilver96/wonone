@@ -92,19 +92,21 @@ body {
 /* Style for Play / About button in header */
 /* Play / About buttons */
 .play-button {
-  background: linear-gradient(135deg, #ff5a5f, #ff8a5f); /* gradient */
+  display: inline-block;   /* prevent flex/block issues */
+  background: linear-gradient(135deg, #ff5a5f, #ff8a5f);
   color: #fff;
-  border: none;          /* no border */
+  border: none;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: bold;
-  font-family: inherit;  /* inherit the clean font from body */
+  font-family: inherit;
   border-radius: 12px;
   cursor: pointer;
-  text-decoration: none; /* remove underline */
+  text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 0 20px #ff5a5f80;
 }
+
 
 .play-button:hover {
   box-shadow: 0 0 40px #ff5a5f;

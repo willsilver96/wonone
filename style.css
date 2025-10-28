@@ -1,7 +1,12 @@
 /* Fade-in animation */
 body {
-  background-color: #f2f2f2; /* temporarily lighter for contrast */
+  background-color: #f2f2f2;
   animation: fadeIn 0.7s ease-in-out;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -19,11 +24,11 @@ body {
   50% { transform: scale(1.05); opacity: 0.9; }
 }
 
-/* Center pot */
+/* Pot container is now relative to body */
 .pot-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 180px;
+  height: 140px; /* slightly taller to fit lip & inner */
 }
 
 /* Dynamic glow based on pot size */
@@ -37,7 +42,7 @@ body {
   animation: glow 3s infinite ease-in-out;
 }
 
-/* Glow animation (intensity scales via CSS variable) */
+/* Glow animation */
 @keyframes glow {
   0%, 100% {
     box-shadow:
@@ -51,11 +56,10 @@ body {
   }
 }
 
-
 /* Inner bowl */
 .pot-inner {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
   width: 130px;
@@ -71,7 +75,7 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -20%);
   width: 130px;
   height: 25px;
   background-color: #333;
@@ -90,13 +94,6 @@ body {
   background-color: #111;
   border-radius: 4px;
   box-shadow: -50px 0 0 #111, 50px 0 0 #111;
-}
-
-.pot-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px; /* push the pot down */
 }
 
 

@@ -93,7 +93,7 @@ body {
 .play-button, .donate-button {
   display: inline;
   background: none;        /* remove the gradient rectangle */
-  color: #ff5a5f;          /* red text like your h1 */
+  color: #111;          /* red text like your h1 */
   font-weight: bold;
   font-family: inherit;
   padding: 0;              /* no extra spacing */
@@ -103,7 +103,7 @@ body {
 }
 
 .play-button:hover, .donate-button:hover {
-  color: #ff8a5f;           /* subtle hover change */
+  color: #111;           /* subtle hover change */
   text-decoration: underline;    /* optional */
 }
 
@@ -139,7 +139,7 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ff5a5f;
+  color: #111;
 }
 
 p {

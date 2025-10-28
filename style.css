@@ -90,17 +90,18 @@ body {
 }
 
 /* Style for Play / About button in header */
+/* Play / About buttons */
 .play-button {
-  background: linear-gradient(135deg, #ff5a5f, #ff8a5f);
+  background: linear-gradient(135deg, #ff5a5f, #ff8a5f); /* gradient */
   color: #fff;
-  border: none;
+  border: none;          /* no border */
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: inherit;  /* inherit the clean font from body */
   border-radius: 12px;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none; /* remove underline */
   transition: all 0.3s ease;
   box-shadow: 0 0 20px #ff5a5f80;
 }
@@ -110,7 +111,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Header positioning */
+/* Ensure header has no background */
 header {
   position: absolute;
   top: 20px;
@@ -119,8 +120,17 @@ header {
   justify-content: flex-end;
   align-items: center;
   z-index: 10;
-  background: none; /* remove grey block */
+  background: none !important; /* override Tailwind default */
 }
+
+/* Body font */
+body {
+  font-family: 'Inter', 'Helvetica', sans-serif; /* clean font across all pages */
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #111;
+}
+
 
 /* About page container */
 .container {

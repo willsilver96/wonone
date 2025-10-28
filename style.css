@@ -92,3 +92,11 @@ body {
   box-shadow: -50px 0 0 #111, 50px 0 0 #111;
 }
 
+.pot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; /* push the pot down */
+}
+
+

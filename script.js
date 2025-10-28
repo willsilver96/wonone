@@ -23,7 +23,7 @@ setInterval(() => {
   pot += 0.11;
   users += 1;
   updateStats();
-}, 2000);
+}, 100);
 
 // Initialize display
 updateStats();

@@ -24,7 +24,7 @@ body {
   50% { transform: scale(1.05); opacity: 0.9; }
 }
 
-/* Pot container is now relative to body */
+/* Pot container */
 .pot-container {
   position: relative;
   width: 180px;
@@ -42,13 +42,12 @@ body {
   animation: glow 3s infinite ease-in-out;
 
   display: flex;
-  flex-direction: column;        /* stack items vertically */
+  flex-direction: column;        
   align-items: center;
-  justify-content: center;       /* center vertically including lip */
-  padding-top: 10px;             /* pushes money slightly down to look centered */
+  justify-content: center;       
+  padding-top: 10px;             
   box-sizing: border-box;
 }
-
 
 /* Glow animation */
 @keyframes glow {
@@ -113,14 +112,50 @@ body {
 
 /* Header positioning */
 header {
-  position: absolute;      /* so it floats independently of body flex */
-  top: 20px;               /* same top spacing as About page */
-  right: 40px;             /* same right spacing as About page */
+  position: absolute;
+  top: 20px;
+  right: 40px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 10;             /* ensure it stays above content */
-  background: none;        /* transparent so no grey block */
+  z-index: 10;
+  background: none; /* remove grey block */
 }
 
+/* About page container */
+.container {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff5a5f;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.donate-button {
+  background: linear-gradient(135deg, #ff5a5f, #ff8a5f);
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #ff5a5f80;
+}
+
+.donate-button:hover {
+  box-shadow: 0 0 40px #ff5a5f;
+  transform: scale(1.05);
+}

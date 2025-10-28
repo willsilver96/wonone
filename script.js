@@ -1,6 +1,6 @@
 // Placeholder data
-let pot = 127.34;
-let users = 231;
+let pot = 110.00;
+let users = 1000;
 
 function updateStats() {
   document.getElementById("potAmount").innerText = `£${pot.toFixed(2)}`;

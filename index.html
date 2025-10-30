@@ -1,51 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WON ONE</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="bg-gray-50 text-gray-800 flex flex-col items-center justify-center h-screen relative">
+<main class="flex flex-col items-center justify-center w-full h-full text-center relative">
 
-  <!-- Top navigation / header -->
-  <header>
-    <a href="about.html" class="play-button">About</a>
-  </header>
-
-  <!-- Main Content -->
-  <main class="flex flex-col items-center justify-center w-full h-full text-center relative">
-    <div class="pot-container">
-      <div class="pot">
-        <div class="pot-lip"></div>
-        <h1 id="potAmount" class="text-3xl font-semibold text-yellow-300">£0.00</h1>
+  <div class="pots-grid">
+    <!-- 50p Pot -->
+    <div class="pot-card">
+      <h2>£0.50 Pot – <span class="charity-name">WaterAid</span></h2>
+      <div class="pot-container">
+        <div class="pot" id="pot1">
+          <div class="pot-lip"></div>
+          <div class="pot-content">
+            <h1 class="text-yellow-300 prize" id="pot1Prize">£0.00</h1>
+            <p class="text-sm text-gray-300 charity-amount" id="pot1Charity">Charity: £0.00</p>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <!-- Stats -->
-    <div class="flex justify-center space-x-8 mt-6 text-sm text-gray-600">
-      <div>
-        <span id="users" class="font-bold text-gray-900">0</span><br>
-        Users in draw
-      </div>
-      <div>
-        <span id="odds" class="font-bold text-gray-900">1 in 0</span><br>
-        Chance of winning
+      <div class="flex justify-center space-x-8 mt-4 text-sm text-gray-600">
+        <div><span id="pot1Users" class="font-bold text-gray-900">0</span><br>Players</div>
+        <div><span id="pot1Odds" class="font-bold text-gray-900">1 in 0</span><br>Odds</div>
       </div>
     </div>
 
-    <button id="enterBtn" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 mt-6 transition">
-      Play
-    </button>
-  </main>
+    <!-- £1 Pot -->
+    <div class="pot-card">
+      <h2>£1 Pot – <span class="charity-name">Mind</span></h2>
+      <div class="pot-container">
+        <div class="pot" id="pot2">
+          <div class="pot-lip"></div>
+          <div class="pot-content">
+            <h1 class="text-yellow-300 prize" id="pot2Prize">£0.00</h1>
+            <p class="text-sm text-gray-300 charity-amount" id="pot2Charity">Charity: £0.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-8 mt-4 text-sm text-gray-600">
+        <div><span id="pot2Users" class="font-bold text-gray-900">0</span><br>Players</div>
+        <div><span id="pot2Odds" class="font-bold text-gray-900">1 in 0</span><br>Odds</div>
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer class="absolute bottom-6 w-full text-center text-xs text-gray-500">
-    © SHAREPOT · 2025
-  </footer>
+    <!-- £2 Pot -->
+    <div class="pot-card">
+      <h2>£2 Pot – <span class="charity-name">Shelter</span></h2>
+      <div class="pot-container">
+        <div class="pot" id="pot3">
+          <div class="pot-lip"></div>
+          <div class="pot-content">
+            <h1 class="text-yellow-300 prize" id="pot3Prize">£0.00</h1>
+            <p class="text-sm text-gray-300 charity-amount" id="pot3Charity">Charity: £0.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-8 mt-4 text-sm text-gray-600">
+        <div><span id="pot3Users" class="font-bold text-gray-900">0</span><br>Players</div>
+        <div><span id="pot3Odds" class="font-bold text-gray-900">1 in 0</span><br>Odds</div>
+      </div>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- £5 Pot -->
+    <div class="pot-card">
+      <h2>£5 Pot – <span class="charity-name">Cancer Research UK</span></h2>
+      <div class="pot-container">
+        <div class="pot" id="pot4">
+          <div class="pot-lip"></div>
+          <div class="pot-content">
+            <h1 class="text-yellow-300 prize" id="pot4Prize">£0.00</h1>
+            <p class="text-sm text-gray-300 charity-amount" id="pot4Charity">Charity: £0.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-8 mt-4 text-sm text-gray-600">
+        <div><span id="pot4Users" class="font-bold text-gray-900">0</span><br>Players</div>
+        <div><span id="pot4Odds" class="font-bold text-gray-900">1 in 0</span><br>Odds</div>
+      </div>
+    </div>
+  </div>
+
+</main>
 
